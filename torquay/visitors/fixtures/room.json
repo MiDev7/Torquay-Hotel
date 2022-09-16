@@ -1,0 +1,234 @@
+[
+{
+  "model": "visitors.room",
+  "pk": 1,
+  "fields": {
+    "availability": true,
+    "category": 1
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 2,
+  "fields": {
+    "availability": true,
+    "category": 3
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 3,
+  "fields": {
+    "availability": true,
+    "category": 3
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 4,
+  "fields": {
+    "availability": true,
+    "category": 3
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 5,
+  "fields": {
+    "availability": true,
+    "category": 3
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 6,
+  "fields": {
+    "availability": true,
+    "category": 3
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 7,
+  "fields": {
+    "availability": true,
+    "category": 3
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 8,
+  "fields": {
+    "availability": true,
+    "category": 3
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 9,
+  "fields": {
+    "availability": true,
+    "category": 3
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 10,
+  "fields": {
+    "availability": true,
+    "category": 3
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 11,
+  "fields": {
+    "availability": true,
+    "category": 3
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 12,
+  "fields": {
+    "availability": true,
+    "category": 2
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 13,
+  "fields": {
+    "availability": true,
+    "category": 2
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 14,
+  "fields": {
+    "availability": true,
+    "category": 2
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 15,
+  "fields": {
+    "availability": true,
+    "category": 2
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 16,
+  "fields": {
+    "availability": true,
+    "category": 2
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 17,
+  "fields": {
+    "availability": true,
+    "category": 9
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 18,
+  "fields": {
+    "availability": true,
+    "category": 9
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 19,
+  "fields": {
+    "availability": true,
+    "category": 9
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 20,
+  "fields": {
+    "availability": true,
+    "category": 4
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 21,
+  "fields": {
+    "availability": true,
+    "category": 4
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 22,
+  "fields": {
+    "availability": true,
+    "category": 5
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 23,
+  "fields": {
+    "availability": true,
+    "category": 6
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 24,
+  "fields": {
+    "availability": true,
+    "category": 6
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 25,
+  "fields": {
+    "availability": true,
+    "category": 6
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 26,
+  "fields": {
+    "availability": true,
+    "category": 6
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 27,
+  "fields": {
+    "availability": true,
+    "category": 6
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 28,
+  "fields": {
+    "availability": true,
+    "category": 5
+  }
+},
+{
+  "model": "visitors.room",
+  "pk": 29,
+  "fields": {
+    "availability": true,
+    "category": 5
+  }
+}
+]
