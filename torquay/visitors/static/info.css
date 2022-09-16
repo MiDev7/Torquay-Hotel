@@ -1,0 +1,282 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Segoe UI;
+    font-weight: 300;
+}
+
+header {}
+h2{
+    font-weight: bolder;
+}
+.logo {
+    margin: 10px 0px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.menu {
+    padding: 0px 0px;
+    list-style: none;
+    background-color: #5e5e5e21;
+    color: white;
+}
+
+li {
+    height: 30px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.burgur {
+    height: 35px;
+    display: flex;
+    justify-content: flex-end;
+    background: black;
+    margin: 0px;
+    padding: 0px 10px;
+    color: white;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.drop_menu {
+    display: none;
+}
+
+.main {}
+
+.head {
+    height: 35vh;
+    width: 100%;
+}
+
+.picture {
+    background-image: url(img/coffee.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 0;
+    top: 0;
+    z-index: -10;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.48);
+    top: 0;
+    bottom: 0;
+    z-index: -5;
+    width: 100%;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dishesh {
+    padding: 6px 10px;
+    display: flex;
+}
+
+.dish {
+    flex: 1;
+}
+
+.dish_name {
+    border-bottom: 1px solid #d6d6d6;
+    padding: 10px 0px;
+    font-weight: bold;
+    color: rgb(64, 64, 64);
+}
+
+.dish_price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+}
+
+.discription {
+    padding: 10px 0px;
+    font-size: small;
+    color: #737373;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.showDish {
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.dishPic {
+    width: 96vw;
+    height: 96vw;
+    background-image: url(img/little.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 4px 1px rgba(128, 128, 128, 0.3);
+}
+
+.detail {
+    width: 96%;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+}
+
+body {
+    position: relative;
+}
+
+.DishName {}
+
+.DishPrice {}
+
+footer {
+    background-color: #3d3d3d;
+    color: white;
+    padding: 20px 10px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+.box p {
+    margin: 4px 0px;
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width: 480px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+        display: flex;
+    }
+    .burgur {
+        display: none;
+    }
+    ul.menu {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    li {
+        padding: 5px;
+    }
+    .head {
+        height: 400px;
+    }
+    .dishesh {
+        width: 50vw;
+        float: left;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+    section {
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 2fr 2fr;
+    }
+    .dishPic {
+        height: 48vw;
+        width: 48vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #00000000;
+    }
+    .logo {
+        margin: 10px 20px;
+    }
+    li:hover {
+        color: #FF9800;
+        background: transparent;
+    }
+    nav {
+        display: flex;
+    }
+    .burgur {
+        display: none;
+    }
+    ul.menu {
+        width: 60vw;
+        color: black;
+        background-color: transparent;
+    }
+    li {
+        padding: 5px;
+    }
+    .head {
+        height: 75vh;
+    }
+    .list {}
+    .dishesh {
+        width: 48%;
+        float: left;
+        margin: 1%;
+    }
+    footer {
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+    section {
+        display: grid;
+        width: 98vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .showDish{
+        padding: 2%;
+    }
+    .dishPic {
+        height: 20vw;
+        width: 100%;
+    }
+    .css-opacity{
+        /*start ------------*/
+        background: #000000; 
+        border: solid #BDBDBD 4px; 
+        opacity: 0.4; 
+        -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity= 38); /* // for IE8 */
+        filter: alpha(opacity= 38); /* //for IE5-7 */
+    }
+    .brand{
+        text-align:center;
+    }
+}

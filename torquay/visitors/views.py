@@ -7,7 +7,7 @@ from django.contrib.auth.views import *
 from django.contrib.auth import *
 # Create your views here.
 
-
+# Login section
 def login_view(request):
     if (request.method == "POST"):
         username = request.cleaned_data['username']
@@ -35,3 +35,11 @@ def signup_view(request):
 
 def logout_view(request):
     logout(request)
+    
+
+def booking(request):
+    return render(request,'booking.html',context={})
+    
+def info(request):
+    return render(request,'info.html',context={})
+    
