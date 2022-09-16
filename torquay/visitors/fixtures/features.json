@@ -1,0 +1,86 @@
+[
+{
+  "model": "visitors.feature",
+  "pk": 1,
+  "fields": {
+    "name": "Free WIFI"
+  }
+},
+{
+  "model": "visitors.feature",
+  "pk": 3,
+  "fields": {
+    "name": "Swimming Pool"
+  }
+},
+{
+  "model": "visitors.feature",
+  "pk": 4,
+  "fields": {
+    "name": "Seaside View"
+  }
+},
+{
+  "model": "visitors.feature",
+  "pk": 5,
+  "fields": {
+    "name": "Free Spa Access"
+  }
+},
+{
+  "model": "visitors.feature",
+  "pk": 6,
+  "fields": {
+    "name": "Transparent Roof"
+  }
+},
+{
+  "model": "visitors.feature",
+  "pk": 7,
+  "fields": {
+    "name": "24/7 Room Service"
+  }
+},
+{
+  "model": "visitors.feature",
+  "pk": 8,
+  "fields": {
+    "name": "Casino"
+  }
+},
+{
+  "model": "visitors.feature",
+  "pk": 11,
+  "fields": {
+    "name": "Gym"
+  }
+},
+{
+  "model": "visitors.feature",
+  "pk": 12,
+  "fields": {
+    "name": "Babysitting Services"
+  }
+},
+{
+  "model": "visitors.feature",
+  "pk": 13,
+  "fields": {
+    "name": "Tour Guide"
+  }
+},
+{
+  "model": "visitors.feature",
+  "pk": 14,
+  "fields": {
+    "name": "Pet Access"
+  }
+},
+{
+  "model": "visitors.feature",
+  "pk": 15,
+  "fields": {
+    "name": "Restaurant"
+  }
+}
+]
