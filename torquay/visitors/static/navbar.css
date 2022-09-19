@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-size: 16px;
+	font-family: "Raleway", sans-serif;
+	color: #555;
+}
+
+ul,
+nav {
+	list-style: none;
+}
+
+a {
+	text-decoration: none !important;
+	opacity: 0.75;
+	color:#555 !important;
+}
+
+
+header {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 100px ;
+	animation: 1s fadein 0.5s forwards;
+	opacity: 0;
+    color:#555 !important;
+	z-index: 2;
+    background-color: antiquewhite;
+}
+
+@keyframes fadein {
+	100% {
+		opacity: 1;
+	}
+}
+
+.NavList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NavList-item {
+    margin-left: 5rem;
+}

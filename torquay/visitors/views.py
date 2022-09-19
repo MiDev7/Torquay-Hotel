@@ -39,16 +39,15 @@ def logout_view(request):
     
 
 def booking(request):
-    if request.method=="POST":
-        messages.info(request, 'Your booking was saved!')
-        print(f'posted data={request.POST}')
-        return redirect('/visitors/info/')
-    else:
-        return render(request,'booking.html',context={})
-   
-        
+    if(request.method == "GET"):
+        return render(request,'booking.html',context={'form': BookingForm})
 
-
+    elif(request.method == "POST"):
+        mybooking = BookingForm(request.POST)
+        mybooking.save()
+        return redirect(reverse('info'))
+    return render(request,'booking.html',context={})
+    
 def info(request):
     return render(request,'info.html',context={})
     
