@@ -10,29 +10,29 @@
     <link rel="stylesheet" href="{% static 'info.css'%}">
 </head>
 <body>
- 
   <header>
     <h2><a href="#">Torquay</a></h2>
     <nav>
-        <li><a>Our Story</a></li>
+        <li><a >Our Story</a></li>
         <li><a>Events</a></li>
-        <li><a>Booking</a></li>
+        <li><a href="{% url 'booking'%}">Booking</a></li>
         <li><a>News</a></li>
         <li><a>Reviews</a></li>
     </nav>
   </header>
+  
 
   <section class="hero">
-    <div class="background-image"></div>
-    <div class="hero-content-area">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+    <div class="background-image">
+      <div class="hero-content-area">
         <h1>Torquay</h1>
       <h3>Everything your way</h3>
     </div>
+    <!-- </div>
+    <div class="hero-content-area">
+        <h1>Torquay</h1>
+      <h3>Everything your way</h3>
+    </div> -->
   </section>
 
   <section class="destinations">
@@ -49,4 +49,4 @@
     </ul>
   </section>
 </body>
-</html>
+</html>Booking

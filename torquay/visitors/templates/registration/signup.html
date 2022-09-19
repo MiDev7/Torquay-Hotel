@@ -1,0 +1,39 @@
+{% extends 'base.html'%}
+{% block content%}
+<form method="post" action="{% url 'signup' %}">
+    {% csrf_token %}
+    {% if user.is_authenticated == False%}
+    <table>
+    <tr>
+        <td>{{ form.username.label}}</td>
+        <td >{{ form.username }}</td>
+    </tr>
+    <tr>
+        <td>{{ form.first_name.label}}</td>
+        <td>{{ form.first_name }}</td>
+    </tr>
+    <tr>
+        <td>{{ form.last_name.label}}</td>
+        <td>{{ form.last_name }}</td>
+    </tr>
+    <tr>
+        <td>{{ form.email.label}}</td>
+        <td>{{ form.email }}</td>
+    </tr>
+    <tr>
+        <td>{{ form.password.label}}</td>
+        <td>{{ form.password }}</td>
+    </tr>
+    </table>
+    
+    
+    <input type="submit" value="Signup" class="btn btn-primary"> 
+    <a href="{% url 'login'%}" class="btn btn-primary">Login</a>
+    <input type="hidden" name="next" value="{{ next }}">
+    {% else %}
+    <p>Welcome To Torquay Hotel, {{user.username}}</p>
+    {%endif%}
+
+    
+</form>
+{% endblock %}

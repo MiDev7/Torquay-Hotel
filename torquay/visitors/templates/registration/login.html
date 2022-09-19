@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+{% block content%}
+<form method="post" action="{% url 'login' %}">
+    {% csrf_token %}
+    {% if user.is_authenticated == False%}
+    <table>
+    <tr>
+        <td>{{ form.username.label_tag }}</td>
+        <td >{{ form.username }}</td>
+    </tr>
+    <tr>
+        <td>{{ form.password.label_tag }}</td>
+        <td>{{ form.password }}</td>
+    </tr>
+    </table>
+    
+    
+    <input type="submit" value="login" class="btn btn-primary">
+    <a href="{% url 'signup'%}" class="btn btn-primary">Signup</a>
+    
+    <input type="hidden" name="next" value="{{ next }}">
+    {% else %}
+    <p>Welcome in IMDI, {{user.username}}</p>
+    <a href="{% url 'logout'%}" class="btn btn-primary">Logout</a>
+    {%endif%}
+
+    
+</form>
+{% endblock %}

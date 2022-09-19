@@ -1,14 +1,11 @@
 {% load static%}
-<nav>
-  
-  <div class="burgur" id="burger">
-  <div class="bar" id="bar">&#9776</div>    
-  </div>
-  <ul class="menu" id="menu">
-      <li>Our Story</li>
-      <li>Menu</li>
-      <li>Reservation</li>
-      <li>News</li>
-      <li>Reviews</li>
-  </ul>
-</nav>
+<header>
+  <h2><a href="#">Torquay</a></h2>
+  <nav>
+      <li><a >Our Story</a></li>
+      <li><a>Events</a></li>
+      <li><a href="{% url 'booking'}">Booking</a></li>
+      <li><a>News</a></li>
+      <li><a>Reviews</a></li>
+  </nav>
+</header>
