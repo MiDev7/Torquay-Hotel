@@ -79,7 +79,7 @@ class Booking(models.Model):
     price = models.IntegerField(null=True)
     
     def save(self, *args, **kwargs):
-        date_format = "%Y-%m-%d"
+        date_format = "%m/%d/%Y"
         delta = (datetime.strptime(self.check_out_date, date_format) - datetime.strptime(self.check_in_date, date_format)) 
 
         self.price = delta.days * self.room.category.price

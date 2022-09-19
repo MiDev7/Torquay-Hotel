@@ -38,6 +38,13 @@ def logout_view(request):
     
 
 def booking(request):
+    if(request.method == "GET"):
+        return render(request,'booking.html',context={'form': BookingForm})
+
+    elif(request.method == "POST"):
+        mybooking = BookingForm(request.POST)
+        mybooking.save()
+        return redirect(reverse('info'))
     return render(request,'booking.html',context={})
     
 def info(request):

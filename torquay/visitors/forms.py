@@ -50,3 +50,45 @@ class LoginForm(forms.ModelForm):
                 }
             )
         }
+
+
+class BookingForm(forms.ModelForm):
+    room = forms.ModelChoiceField(queryset=Room.objects.all(),
+                                    to_field_name = 'category',
+                                    empty_label="Select a Room Type")
+
+    number_of_people = forms.IntegerField(widget=forms.NumberInput(
+        attrs={
+            'class':'form-control',
+            'type': 'number',
+            'max': '5',
+            'placeholder':'0',
+            'min':'0'
+        }
+               
+    )
+    )
+
+    class Meta:
+        model = Booking
+        fields = ['room','check_in_date', 'check_out_date','number_of_people']
+        widgets = {
+            'check_in_date' : forms.DateInput(
+                format=('%Y-%m-%d'),
+                attrs= {
+                    'class':'form-control', 
+                    'placeholder':'Select a date', 
+                    'type':'date'
+                }
+            ),
+
+            'check_out_date' : forms.DateInput(
+                format=('%Y-%m-%d'),
+                attrs= {
+                    'class':'form-control', 
+                    'placeholder':'Select a date', 
+                    'type':'date'
+                }
+            ),
+
+        }
