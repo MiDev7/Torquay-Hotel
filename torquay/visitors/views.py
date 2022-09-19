@@ -2,6 +2,7 @@ from audioop import reverse
 from django.shortcuts import render
 from .forms import *
 from .models import *
+from django.contrib import messages
 from django.shortcuts import *
 from django.contrib.auth.views import *
 from django.contrib.auth import *
@@ -38,8 +39,16 @@ def logout_view(request):
     
 
 def booking(request):
-    return render(request,'booking.html',context={})
-    
+    if request.method=="POST":
+        messages.info(request, 'Your booking was saved!')
+        print(f'posted data={request.POST}')
+        return redirect('/visitors/info/')
+    else:
+        return render(request,'booking.html',context={})
+   
+        
+
+
 def info(request):
     return render(request,'info.html',context={})
     
