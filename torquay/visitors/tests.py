@@ -16,7 +16,7 @@ class BookingTestCase(TestCase):
         name = User.objects.get(username= "Tony")
         r1 = rooms[1].book("2022-08-12","2022-09-10",name,2)
 
-        self.assertEqual(r1.price,9)
+        self.assertEqual(r1.price,870)
         r2= Room.search("2022-08-12","2022-09-10",3)
         self.assertEqual(len(r2),9)
 

@@ -1,8 +1,9 @@
 {% extends 'base.html'%}
 {% block content%}
 <form method="post" action="{% url 'login' %}">
-    {% csrf_token %}
+    
     {% if user.is_authenticated == False%}
+    {% csrf_token %}
     <table>
     <tr>
         <td>{{ form.username.label_tag }}</td>
